@@ -1,0 +1,160 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e8faee;
+}
+
+header {
+    background-color: #a7f2bb;
+    padding: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.mainDiv {
+    background-color: #fff8e7;
+    box-sizing: border-box;
+    margin: 0 15px;
+    padding: 20px;
+    min-height: calc(100vh - 95px);
+    display: flex;
+    flex-direction: column;
+}
+
+.topRow {
+    display: flex;
+}
+
+.picDiv {
+    margin: 5px 5px;
+}
+.projectImage {
+  width: 35%;
+  height: auto;
+  display: block;
+  margin: 10px auto 0;
+}
+.mainImage {
+    max-height: 325px;
+    width: auto;
+}
+
+.rightCol {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+    flex: 1;
+}
+
+.introDiv {
+    margin: 0;
+}
+
+.tableDiv {
+    width: 90%;
+    max-width: 66vw;
+    margin: 10px 0 0 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #a7f2bb;
+    padding: 6px 10px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+th {
+    background-color: #a7f2bb;
+}
+.intermediate { color: rgb(255, 183, 0); }
+.advanced { color: green; }
+.beginner { color: red; }
+.contactForm {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contactForm label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  font-family: inherit;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.contactForm button {
+  display: block;
+  margin: 16px auto 0;
+  padding: 10px 20px;
+  background-color: #2f7a3d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.contactForm button:hover {
+  background-color: #245c2f;
+}
+.slideshow {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.slideshowImage {
+  display: block;
+  width: 25%;
+  height: auto;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.slideshowArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.slideshowPrev {
+  left: 5px;
+}
+
+.slideshowNext {
+  right: 5px;
+}
+
+.slideshowArrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navBar a{
+display: block;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Austin Gilbert's Digital Resume</title>
+<link rel="stylesheet" href="resumeStyles.css">
+<style>
+html, body {
+
+color:black;
+font-family: "Times New Roman", Times, serif;
+
+}
+#major {
+    color: #2f7a3d;
+    font-weight: bold;
+}
+.navBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.navBar li {
+  float: left;
+}
+
+.navBar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navBar li a:hover {
+  background-color: #111111;
+}
+
+
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>Austin Gilbert's Digital Resume</h1>
+    </header>
+    <div class="navBar"> 
+<ul>
+    <li><a href="GilbertResume.html">Home</a></li>
+    <li><a href="Projects.html">My Projects</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+</ul>
+    </div>
+
+    <div class="mainDiv">
+        <div class="topRow">
+            <div class="picDiv"> 
+                <img class="mainImage" src="image5.jpg" alt="My Cat">
+            </div>
+
+            <div class="rightCol">
+                <div class="introDiv">
+                    <p>My name is <a style="color:#2f7a3d" href="https://www.linkedin.com/in/austin-gilbert-7b238514a/">Austin Gilbert</a>, and I'm a <span id="major">Computer Science major</span> at Virginia State University. I'm currently in my senior year.</p>
+                    <ul>
+                        <li>Cabinet Installation Specialist - 17 years experience</li>
+                        <li>Interested in software development and automation systems</li>
+                        <li>Experienced with AI systems, microcontrollers, and multiple coding languages</li>
+                        <li>Comfortable working both independently and on team projects</li>
+                    </ul>
+                </div>
+
+                <div class="tableDiv">
+                    <h2>Coding Experience</h2>
+                    <table>
+                        <tr>
+                            <th>Language</th>
+                            <th>Experience Level</th>
+                            <th>Years Used</th>
+                        </tr>
+                        <tr>
+                            <td>HTML/CSS/Javascript</td>
+                            <td>Intermediate</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Rust</td>
+                            <td>Intermediate</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>C/C#/C++</td>
+                            <td>Intermediate</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Python/Micropython/Circuitpython</td>
+                            <td>Advanced</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>Advanced</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Matlab</td>
+                            <td>Advanced</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>PHP/SQL</td>
+                            <td>Intermediate</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Arduino</td>
+                            <td>Intermediate</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>LUA</td>
+                            <td>Intermediate</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>R</td>
+                            <td>Intermediate</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+document.querySelectorAll(".tableDiv td").forEach(cell => {
+    const text = cell.textContent.trim();
+    if (text === "Intermediate") {
+        cell.classList.add("intermediate");
+    } else if (text === "Advanced") {
+        cell.classList.add("advanced");
+    } else if (text === "Beginner") {
+        cell.classList.add("beginner");
+    }
+});
+</script>
+</body>
+</html>

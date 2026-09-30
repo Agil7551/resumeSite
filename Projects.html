@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Austin Gilbert's Digital Resume</title>
+<link rel="stylesheet" href="resumeStyles.css">
+<style>
+html, body {
+
+color:black;
+font-family: "Times New Roman", Times, serif;
+
+}
+#major {
+    color: #2f7a3d;
+    font-weight: bold;
+}
+.navBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.navBar li {
+  float: left;
+}
+
+.navBar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navBar li a:hover {
+  background-color: #111111;
+}
+
+
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>Austin Gilbert's Digital Resume</h1>
+    </header>
+    <div class="navBar"> 
+<ul>
+  <li><a href="GilbertResume.html">Home</a></li>
+  <li><a href="Projects.html">Projects</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+</ul>
+    </div>
+
+    <div class="mainDiv">
+
+        <div class="projectsIntro">
+            <h2>Key Projects &amp; Coursework</h2>
+            <p>Below are some of the projects, assignments, and classes that have shaped my experience as a Computer Science major at Virginia State University.</p>
+        </div>
+
+        <div class="projectGrid">
+
+            <div class="projectCard">
+                <h3>Twitch Automated Garden</h3>
+                <p>For my senior proejct, I've been working on an automated gareden that controls most aspects of the garden including water and nutrients.  It also allows for user interaction to control the different aspects of automation.</p>
+
+                <div class="slideshow">
+                    <img class="slideshowImage" src="image1.jpg" alt="Screenshot of Project 1">
+                    <img class="slideshowImage" src="image2.jpg" alt="Screenshot of Project 1, image 2" style="display:none;">
+                    <img class="slideshowImage" src="image3.jpg" alt="Screenshot of Project 1, image 3" style="display:none;">
+                    <img class="slideshowImage" src="image4.jpg" alt="Screenshot of Project 1, image 2" style="display:none;">
+
+                    <button class="slideshowArrow slideshowPrev" onclick="changeSlide(this, -1)">&#10094;</button>
+                    <button class="slideshowArrow slideshowNext" onclick="changeSlide(this, 1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="projectCard">
+                <h3>School Trading Website</h3>
+                <p>For my database systems class, I created a website for school trading.  This involved creating a website similar to Amazon.  A database was used to store encrypted usernames and passwords, create, display, and sort item listings, and the ability to add them to a cart and purchase them.</p>
+                <img class="projectImage" src="png1.png" alt="Screenshot of Project 2">
+
+            </div>
+
+            <div class="projectCard">
+                <h3>Relevant Coursework</h3>
+                <p>I have taken many classes that increase my coding abilities.  Advanced algorithms showed me how to use time complexities to choose the best algorithm for each problem.
+                    <br>In introduction to Artificial Intelligence, I learned how to create and train multiple types of AI algorithms and neural networks, as well as applying existing models to fit a new set of data.
+                    <br>By taking a coding centric statistics class, I was taught how to use R which computes complex statistics and can be called from other coding languages to allow for ease of access of statistics in any coding language.
+                    <br>In other classes, I have learned many different coding languages and learned about many applications of coding including microchips, microcontrollers, databases, machine learning, headless systems, computer networking, and computer security.
+                </p>
+                </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function changeSlide(button, direction) {
+            const slideshow = button.parentElement;
+            const images = slideshow.querySelectorAll(".slideshowImage");
+            let currentIndex = 0;
+
+            images.forEach((img, index) => {
+                if (img.style.display !== "none") {
+                    currentIndex = index;
+                }
+            });
+
+            images[currentIndex].style.display = "none";
+            let newIndex = (currentIndex + direction + images.length) % images.length;
+            images[newIndex].style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
